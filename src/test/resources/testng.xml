@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Orange Automation Test Suite">
+
+	<listeners>
+		<listener class-name="com.qa.ExtentReporterListener.ExtentReporterListener" />
+		 <listener class-name="analyzer.MyTransformer"/>
+	</listeners>
+
+
+	<test name="Orange Test Cases">
+		<classes>
+			<class name="com.qa.testcases.LoginTest"></class>
+			<class name="com.qa.testcases.DashboardTest"></class>
+			<class name="com.qa.testcases.TimeTest"></class>
+			<class name="com.qa.testcases.MyInfoTest"></class>
+			<class name="com.qa.testcases.PerformanceTest"></class>
+			<class name="com.qa.testcases.DirectoryTest"></class>
+			<class name="com.qa.testcases.ClaimTest"></class>
+			<class name="com.qa.testcases.BuzzTest"></class>
+			
+		</classes>
+	</test>
+</suite>
